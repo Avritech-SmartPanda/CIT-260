@@ -25,16 +25,16 @@ package Week09;
  * 8) Create a UML diagram that documents your class design Submit your class
  *    diagram with your assignment. The preferred format is a .PDF file.
  *
- * @author Matthew Hummer
+ * @author Daphne Avril Museruka
  */
-public class Point { // I named it "Point" instead of "MyPoint" cause I think that name is stupid
+public class MyPoint {
     private int x;
     private int y;
 
     /**
      * No-arg constructor. Creates Point that defaults to (0,0)
      */
-    public Point(){
+    public MyPoint(){
         this.x = 0;
         this.y = 0;
     }
@@ -45,7 +45,7 @@ public class Point { // I named it "Point" instead of "MyPoint" cause I think th
      * @param x desired x-value of a Point
      * @param y desired y-value of a Point
      */
-    public Point(int x, int y){
+    public MyPoint(int x, int y){
         this.x = x;
         this.y = y;
     }
@@ -96,7 +96,7 @@ public class Point { // I named it "Point" instead of "MyPoint" cause I think th
     }
 
     /**
-     * Calculates the distance between a Point and given x and y values
+     * Calculates the distance between a Point, given x and y values
      *
      * @param xCoord the x coordinate of another point
      * @param yCoord the y coordinate of another point
@@ -117,7 +117,7 @@ public class Point { // I named it "Point" instead of "MyPoint" cause I think th
      * @param point the other Point to calculate distance from
      * @return the distance between the Point and the provided Point
      */
-    public double distance(Point point) {
+    public double distance(MyPoint point) {
         return this.distance(point.getX(), point.getY());
     }
 
@@ -128,7 +128,7 @@ public class Point { // I named it "Point" instead of "MyPoint" cause I think th
      * @param point2 The second Point
      * @return the distance between the two points
      */
-    public static double distance (Point point1, Point point2){
+    public static double distance (MyPoint point1, MyPoint point2){
         return point1.distance(point2);
     }
 }
